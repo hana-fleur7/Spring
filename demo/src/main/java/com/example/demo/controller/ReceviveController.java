@@ -8,7 +8,7 @@ import com.example.demo.form.ReceiveForm;
 
 @Controller
 @RequestMapping("/receive")
-public class ReceviveControllar {
+public class ReceviveController {
 
     @RequestMapping("")
     public String index(){

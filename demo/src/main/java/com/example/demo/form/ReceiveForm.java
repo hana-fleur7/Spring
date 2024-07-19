@@ -9,6 +9,7 @@ public class ReceiveForm {
     }
 
     public void setName(String name){
+        this.name = name;
 
     }
     
@@ -17,6 +18,7 @@ public class ReceiveForm {
     }
 
     public void setAge(String age){
+        this.age = age;
     }
     
     @Override
