@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    入力した数値を計算します。数値を入力してください。<br>
+    <form action="finished.html"
+        th:action="@{/enzan/result}" method="post">
+    <input type="text" name="num1"placeholder="入力例:1">
+    <select name="operator">
+        <option value="add" selected>+</option>
+        <option value="subtract" selected>-</option>
+        <option value="multiplication" selected>×</option>
+        <option value="divide" selected>÷</option>
+    </select>
+    <input type="text" name="num2"placeholder="入力例:2"><br>
+    <br><button type="submit">計算する</button>
+    
+    </form>
+</body>
+</html>

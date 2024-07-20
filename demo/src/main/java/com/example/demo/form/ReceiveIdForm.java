@@ -1,6 +1,6 @@
 package com.example.demo.form;
 
-public class ReceiveForm {
+public class ReceiveIdForm {
     private String name;
     private String age;
 
