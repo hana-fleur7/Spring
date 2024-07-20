@@ -7,7 +7,7 @@
 </head>
 <body>
     <div th:with="operatorChar=${operator} == 'add' ? '+' : (${operator} == 'subtract' ? '-' : (${operator} == 'multiplication' ? '×' : (${operator} == 'divide' ? '÷' : '')))">
-        <p th:text="'計算結果は ' + ${num1} + ' ' + ${operatorChar} + ' ' + ${num2} + ' = ' + ${result} + ' です。'"></p>
+        <p th:text="'結果は ' + ${num1} + ' ' + ${operatorChar} + ' ' + ${num2} + ' = ' + ${result} + ' です。'"></p>
     </div>
 </body>
 </html>
