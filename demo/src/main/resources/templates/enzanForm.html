@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>四則演算しよう</title>
 </head>
 <body>
-    入力した数値を計算します。数値を入力してください。<br>
+    四則演算ができるフォームです。<br>
+    入力ボックスに数値を入力し、演算子はプルダウンから選択してください。<br>
+    <strong>※数値は小数として計算され、整数を入力した場合も結果は小数で出力されます。</strong><br>
     <form action="finished.html"
         th:action="@{/enzan/result}" method="post">
-    <input type="text" name="num1"placeholder="入力例:1">
+    <input type="text" name="num1"placeholder="数値:10.0など">
     <select name="operator">
         <option value="add" selected>+</option>
         <option value="subtract" selected>-</option>
         <option value="multiplication" selected>×</option>
         <option value="divide" selected>÷</option>
     </select>
-    <input type="text" name="num2"placeholder="入力例:2"><br>
+    <input type="text" name="num2"placeholder="数値:2など"><br>
     <br><button type="submit">計算する</button>
     
     </form>
